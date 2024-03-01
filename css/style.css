@@ -1,0 +1,68 @@
+/* || GENERAL STYLES */
+
+body {
+    background-color: #000;
+}
+  
+h1,
+h2,
+h3,
+h4 {
+}
+  
+ul {
+}
+
+blockquote {
+}
+
+/* || UTILITIES */
+
+.nobullets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* || SITEWIDE */
+
+.logo {
+/* … */
+}
+
+/* || Typography */
+
+/* … */
+
+/* || Header and Main Navigation */
+header {
+/*    */
+}
+.navbar {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: opacity .3s ease;
+    border: 1px #e8c9c9 solid;
+    display: flex;  /* Make Flex container */
+    justify-content: center;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #fefefe;
+}
+.navbar li {
+    position: relative;
+    float: left;
+    padding: 15px;
+    text-align: center;
+}
+.navbar li:hover {
+    background: #555;
+}
+/* … */
