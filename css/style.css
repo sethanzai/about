@@ -16,6 +16,10 @@ ul {
 blockquote {
 }
 
+.w2-1 {
+    width: 50%;
+}
+
 /* || UTILITIES */
 
 .nobullets {
@@ -45,9 +49,8 @@ header {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: opacity .3s ease;
-    border: 1px #e8c9c9 solid;
-    display: flex;  /* Make Flex container */
-    justify-content: center;
+    position: fixed;
+    z-index: 99999;
 }
 .navbar ul {
     list-style-type: none;
@@ -63,6 +66,6 @@ header {
     text-align: center;
 }
 .navbar li:hover {
-    background: #555;
+    background-color: #006775;
 }
 /* … */
