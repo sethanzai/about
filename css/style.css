@@ -8,15 +8,21 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+p
+{
+    font-family: "Noto Sans JP", sans-serif;  
 }
-  
+
 ul {
 }
 
 blockquote {
 }
 
+.w4-1 {
+    width: 25%;
+}
 .w2-1 {
     width: 50%;
 }
@@ -119,7 +125,7 @@ header {
     width: 100%;
     margin: auto;
     position: absolute;
-    top: 20vh;
+    top: 10vw;
     display: flex;
 }
 .container-home-title-left {
@@ -137,9 +143,55 @@ header {
 
 /* Home Main title */
 .home-main-title {
-    font-family: 'Bebas Neue', sans-serif;
     width: 100%;
     text-align: left;
+}
+.home-main-title p {
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 5vw;
     color: #fff;
+}
+
+/* About section */
+.about-me-container {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 10%;
+}
+.about-me-picture-container img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+}
+.about-me-text-container {
+    padding-left: 4vw;
+  }
+.about-me-text-container h1 {
+    font-size: 2.5vw;
+    line-height: 2.0vw;
+    padding-bottom: 2vw;
+}
+.about-me-text-container h1, h2 {
+    color: #fff;
+    margin: 0;
+}
+.about-me-text-container h2, p {
+    color: #ababab;
+}
+.about-me-text-container span {
+    color: #fff;
+}
+.about-me-text-info {
+    display: flex;
+    padding: 10px 0 10px 0;
+}
+.about-me-text-info-left {
+    color: #fff;
+}
+.about-me-text-info-right {
+    color: #fff;
+}
+.about-me-text-info-label {
+    font-weight: 800;
 }
