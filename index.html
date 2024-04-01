@@ -9,78 +9,84 @@
         <!-- Internal JS -->
         <script type="text/javascript" src="./js/main.js"></script>
     </head>
-    <title>About Seth Anzai</title>
+    <title>About Shu Anzai</title>
     <body>
         <!-- Header section -->
         <header>
             <div class="navbar">
                 <ul>
-                    <li>
+                    <li onclick="scrollToSection('about-me')">
                         About
                     </li>
-                    <li>
+                    <li onclick="scrollToSection('resume')">
                         Resume
                     </li>
-                    <li>
+                    <li onclick="scrollToSection('about-me')">
                         Portfolio
                     </li>
-                    <li>
+                    <li onclick="scrollToSection('contact')">
                         Contact
                     </li>
                 </ul>
             </div>
         </header>
-        <div class="scroll-bar" onclick="scrollButtonClicked()">
-            <p class="chevron">
-        </div>
-        <img class="image-home-background" src="./image/main-background.jpg">
-        <div class="container-home-title-logo">
-            <div class="container-home-title-left w2-1">
-                <h1 class="home-main-title">
-                    <p>Hello,</p>
-                    <p>my name is</p>
-                    <p>Seth Anzai.</p>
-                </h1>
-            </div>
-            <div class="contain-home-title-right">
-                <img class="image-home-mainLogo" src="./image/logo_transparent.png">  
-            </div>                                           </div>
-        </div>
 
-<!-- About section -->
-        <div id="about-me" class="about-me-container">
-            <div class="about-me-picture-container w4-1">
-                <img src="./image/profile.jpg">
+        <!-- Home Section -->
+        <section id="home">
+            <div class="scroll-bar" onclick="scrollButtonClicked()">
+                <p class="chevron">
             </div>
-            <div class="about-me-text-container w2-1">
-              <h1>About me</h1>
-                <p>Hello, my name is Seth Anzai and I'm a developer based in the United States.</p>
-                  <p>I have a variety of experice in web and software development such as, HTML, CSS + JavaScript, and Swift/SwiftUI. I can of design and engineer front-end functionalities that caters to the higher user experience.</p>
-                <div class="about-me-text-info">
-                    <div class="about-me-text-info-left w2-1">
-                        <p>
-                            <span class="about-me-text-info-label">Location:</span> United States/Japan
-                        </p>
-                        <p>
-                            <span class="about-me-text-info-label">Language:</span> English, Japanese, Tagalog
-                        </p>
-                        <p>
-                            <span class="about-me-text-info-label">Study:</span> Five Towns College
-                        </p>
-                    </div>
-                    <div class="about-me-text-info-right w2-1">
-                        <p>
-                            <span class="about-me-text-info-label">Programming Language:</span> HTML, CSS + JS, Swift/SwiftUI
-                        </p>
-                        <p>
-                            <span class="about-me-text-info-label">Scripting Language:</span> PowerShell, Shell
-                        </p>
-                        <p>
-                            <span class="about-me-text-info-label">Employment:</span> SIA Technical Services
-                        </p>
+            <img class="image-home-background" src="./image/main-background.jpg">
+            <div class="container-home-title-logo">
+                <div class="container-home-title-left w2-1">
+                    <h1 class="home-main-title">
+                        <p>Hello,</p>
+                        <p>my name is</p>
+                        <p>Shu Anzai.</p>
+                    </h1>
+                </div>
+                <div class="contain-home-title-right">
+                    <img class="image-home-mainLogo" src="./image/logo_transparent.png">  
+                </div>                                           </div>
+            </div>
+        </section>
+        
+        <!-- About section -->
+        <section id="about-me">
+            <div class="about-me-container">
+                <div class="about-me-picture-container w4-1">
+                    <img src="./image/profile.jpg">
+                </div>
+                <div class="about-me-text-container w2-1">
+                <h1>About me</h1>
+                    <p>Hello, my name is Shu Anzai and I'm a developer based in the United States.</p>
+                    <p>I have a variety of experice in web and software development such as, HTML, CSS + JavaScript, and Swift/SwiftUI. I can of design and engineer front-end functionalities that caters to the higher user experience.</p>
+                    <div class="about-me-text-info">
+                        <div class="about-me-text-info-left w2-1">
+                            <p>
+                                <span class="about-me-text-info-label">Location:</span> United States/Japan
+                            </p>
+                            <p>
+                                <span class="about-me-text-info-label">Language:</span> English, Japanese, Tagalog
+                            </p>
+                            <p>
+                                <span class="about-me-text-info-label">Study:</span> Five Towns College
+                            </p>
+                        </div>
+                        <div class="about-me-text-info-right w2-1">
+                            <p>
+                                <span class="about-me-text-info-label">Programming Language:</span> HTML, CSS + JS, Swift/SwiftUI
+                            </p>
+                            <p>
+                                <span class="about-me-text-info-label">Scripting Language:</span> PowerShell, Shell
+                            </p>
+                            <p>
+                                <span class="about-me-text-info-label">Employment:</span> SIA Technical Services
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section> 
     </body>
 </html>
