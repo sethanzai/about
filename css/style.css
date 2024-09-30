@@ -75,6 +75,43 @@ header {
 .navbar li:hover {
     background-color: #7c7c7c;
 }
+.navbar a.icon {
+    display: none;
+}
+
+/* Hamburger Menu */
+.icon-hamburger {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    background-color: #484848;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #6a5fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1, .change .bar2, .change .bar3 {
+    background-color: #ff5f5f;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
 /* … */
 
 /* Scroll bar */
@@ -336,3 +373,47 @@ header {
 .contact-text-info-label {
     font-weight: 800;
 }
+
+
+/* Responsive Design */
+@media screen and (min-width: 600px) {
+    .icon-hamburger {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        width: 100%;
+        background: rgba(81, 81, 81, 1);
+        height: 0px;
+        -webkit-transition: height 0.5s linear;
+           -moz-transition: height 0.5s linear;
+            -ms-transition: height 0.5s linear;
+             -o-transition: height 0.5s linear;
+                transition: height 0.5s linear;
+    }
+    .navbar ul {
+        visibility: hidden;
+        transition: visibility 0s, opacity 0.5s linear;
+    }
+    .open ul {
+        visibility: visible;
+    }
+    .open li {
+        float: none;
+    }
+    div.open {
+        height: 275px;
+        -webkit-transition: height 0.5s linear;
+           -moz-transition: height 0.5s linear;
+            -ms-transition: height 0.5s linear;
+             -o-transition: height 0.5s linear;
+                transition: height 0.5s linear;
+        opacity: 1;
+    }
+    .icon-hamburger {
+    }
+}
+  

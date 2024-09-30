@@ -36,3 +36,19 @@ function scrollButtonClicked() {
     }
     scrollToSection(nextSection);
 }
+
+
+//Responsive design
+function responsiveMenuFunction() {
+    var x = document.getElementById("topNav");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+}
+
+function menuToggle(x) {
+    x.classList.toggle("change");
+    document.getElementById("id-navbar").classList.toggle("open");
+  }
