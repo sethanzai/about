@@ -388,11 +388,11 @@ header {
         width: 100%;
         background: rgba(81, 81, 81, 1);
         height: 0px;
-        -webkit-transition: height 0.5s linear;
-           -moz-transition: height 0.5s linear;
-            -ms-transition: height 0.5s linear;
-             -o-transition: height 0.5s linear;
-                transition: height 0.5s linear;
+        -webkit-transition: height 0.25s linear;
+           -moz-transition: height 0.25s linear;
+            -ms-transition: height 0.25s linear;
+             -o-transition: height 0.25s linear;
+                transition: height 0.25s linear;
     }
     .navbar ul {
         visibility: hidden;
@@ -406,24 +406,26 @@ header {
     }
     div.open {
         height: 275px;
-        -webkit-transition: height 0.5s linear;
-           -moz-transition: height 0.5s linear;
-            -ms-transition: height 0.5s linear;
-             -o-transition: height 0.5s linear;
-                transition: height 0.5s linear;
+        -webkit-transition: height 0.25s linear;
+           -moz-transition: height 0.25s linear;
+            -ms-transition: height 0.25s linear;
+             -o-transition: height 0.25s linear;
+                transition: height 0.25s linear;
         opacity: 1;
     }
     .icon-hamburger {
     }
 
-    .about-me-container {
+    #home, .container-home-title-logo {
+        padding-top: 59px;
+    }
+    .about-me-container, .resume-container, .portfolio-container, .contact-container {
         flex-direction: column;
         width: 100%;
         margin: 0;
         padding: 1%;
-
     }
-    .about-me-container h1 {
+    h1 {
         font-size: 24;
     }
     .about-me-picture-container {
@@ -434,19 +436,19 @@ header {
         width: 70%;
         padding: 0 15%;
     }
-    .about-me-text-container {
+    .about-me-text-container, .about-me-text-container, .resume-text-container, .portfolio-text-container, .contact-text-container {
         width: 100% !important;
         padding-top: 20px;
-        padding-left: 0;
+        padding-left: 1%;
     }
+
     .resume-container {
         display: block;
         width: 100%;
         margin: 0;
-        padding: 1%;
     }
-    .resume-container h1 {
-        font-size: 24; 
+    h1 {
+        font-size: 24 !important; 
     }
     .resume-picture-container {
         display: flex;
@@ -456,13 +458,11 @@ header {
         width: 70%;
         padding: 0 15%;
     }
-    .resume-text-container {
-        width: 100% !important;
-        padding-top: 20px;
-        padding-left: 0;
-    }
+
     .resume-text-info {
         flex-direction: column;
     }
+    .w2-1{
+        width: 100% !important;
 }
   
